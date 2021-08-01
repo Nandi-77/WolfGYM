@@ -63,6 +63,7 @@
                                     background: #111;
                                     transition: 0.5s;
                                     z-index: 2;
+                                    line-height: 2;
                                   }
 
                                   .showcase.active {
@@ -95,34 +96,35 @@
                                   }
 
                                   .text h2 {
-                                    font-size: 5em;
+                                    font-size: 3rem;
                                     font-weight: 800;
                                     color: #fff;
                                     margin-bottom: 15px;
-                                    line-height: 1em;
+                                    line-height: 1;
                                     text-transform: uppercase;
                                   }
 
                                   .text h3 {
-                                    font-size: 3em;
+                                    font-size: 2.5rem;
                                     font-weight: 600;
                                     color: #fff;
-                                    margin-bottom: 15px;
-                                    line-height: 1em;
-                                    text-transform: uppercase;
+                                    margin-top: 35px;
+                                    margin-bottom: 25px;
+                                    line-height: 1;
+                                    text-transform:uppercase;
                                   }
 
                                   .text h4 {
-                                    font-size: 2em;
-                                    font-weight: 500;
+                                    font-size: 1.8rem;
+                                    font-weight: lighter;
                                     color: #fff;
                                     margin-bottom: 15px;
-                                    line-height: 1em;
+                                    line-height: 1;
                                     text-transform: uppercase;
                                   }
 
                                   .text p {
-                                    font-size: 1.5em;
+                                    font-size: 1.5rem;
                                     color: #fff;
                                     margin: 20px 0;
                                     font-weight: 300;
@@ -142,6 +144,7 @@
                                     color: #111;
                                     letter-spacing: 2px;
                                     transition: 0.2s;
+                                    font-size: 1rem;
                                   }
 
                                   .text a:hover {
@@ -202,7 +205,7 @@
                                     color: #03a9f4;
                                   }
 
-                                  @media all and (min-width: 200px) and (max-width:800px) {
+                                  @media all and (min-width: 250px) and (max-width:990px) {
 
                                     .showcase,
                                     .showcase header {
@@ -215,13 +218,14 @@
                                     }
 
                                     .text h3 {
-                                      font-size: 3.5rem;
+                                      font-size: 4rem;
                                       margin-bottom: 30px;
                                     }
 
                                     .text h4 {
-                                      font-size: 3rem;
+                                      font-size: 3.5rem;
                                       text-align: left;
+                                      font-weight: bold;
                                     }
 
                                     .text p {
@@ -232,11 +236,11 @@
 
                                     .toggle {
                                       position: relative;
-                                      width: 85px;
-                                      height: 85px;
+                                      width: 100px;
+                                      height: 100px;
                                       background: url(https://i.ibb.co/HrfVRcx/menu.png);
                                       background-repeat: no-repeat;
-                                      background-size: 80% auto;
+                                      background-size: 85% auto;
                                       background-position: center;
                                       cursor: pointer;
                                     }
@@ -244,12 +248,23 @@
                                     .toggle.active {
                                       background: url(https://i.ibb.co/rt3HybH/close.png);
                                       background-repeat: no-repeat;
-                                      background-size: 65px;
+                                      background-size: 45px;
                                       background-position: center;
                                       cursor: pointer;
                                     }
 
                                     .logo {
-                                      font-size: 3.5rem;
+                                      font-size: 4rem;
                                     }
+                                    .menu ul li {
+    list-style: none;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+.menu ul li a {
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 3rem;
+    color: #111;
+}
                                   }
