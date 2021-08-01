@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WOLFGallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background-color: black;
+      color: #50CB93;
+    }
+
+    header {
+      margin: 2% auto;
+    }
+
+    .header {
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 5px;
+      font-weight: lighter;
+    }
+
+    .navbar-brand {
+      font-size: 1.5rem;
+    }
+
+    .nav-link {
+      font-size: 1.2rem;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+
+    .column {
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+    }
+
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+    img:hover {
+      opacity: 0.9;
+      transition: 0.9s;
+    }
+
+    /* .mem-home {
+  position: absolute;
+  top: 8%;
+  right:2%;
+  font-size: 1.8rem;
+  font-weight: 400;
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+  text-align: left;
+  margin: 10px auto;
+}
+
+.mem-home:hover {
+  background-color: #CAF7E3;
+  color: black;
+} */
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .column {
+        /* -ms-flex: 50%; */
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+
+    <nav class="navbar navbar-expand-md navbar-light" style="background-color: #EDEDED;margin-top:0;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">WOLF</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="membership.html">Membership</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="header">
+    <h1>Gallery</h1>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="images\1.jpg" style="width:100%">
+      <img src="images\2.jpg" style="width:100%">
+      <img src="images\3.jpg" style="width:100%">
+      <img src="images\4.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="images\5.jpg" style="width:100%">
+      <img src="images\6.jpg" style="width:100%">
+      <img src="images\7.jpg" style="width:100%">
+      <img src="images\8.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="images\9.jpg" style="width:100%">
+      <img src="images\10.jpg" style="width:100%">
+      <img src="images\11.jpg" style="width:100%">
+      <img src="images\12.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="images\13.jpg" style="width:100%">
+      <img src="images\14.jpg" style="width:100%">
+      <img src="images\15.jpg" style="width:100%">
+      <img src="images\16.jpg" style="width:100%">
+    </div>
+  </div>
+
+</body>
+
+</html>

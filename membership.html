@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="">
+  <title>WOLF|MEMBERSHIP</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="css/styles.css"> -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet"> -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      /* overflow-x:hidden; */
+    }
+
+    .membership-body {
+      box-sizing: border-box;
+      background-color: #1B2021;
+      color: white;
+      min-width: 100vw;
+      min-height: 100vh;
+      margin-top: 20px;
+    }
+
+    .pricing-heading {
+      font-family: 'Montserrat', serif;
+      font-size: 3em;
+      font-weight: bold;
+      color: white;
+      /* text-decoration: underline; */
+      margin: 20px 20px 20px;
+      padding-right: 25px;
+      padding-left: 25px;
+    }
+
+    .columns {
+      float: left;
+      width: 45%;
+      padding: 8px;
+    }
+
+    .price {
+      list-style-type: none;
+      border: 1px solid #eee;
+      margin: 2%;
+      padding: 10px;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+    }
+
+    .price:hover {
+      box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
+    }
+
+    .price .header {
+      background-color: #F9B208;
+      color: black;
+      font-size: 25px;
+    }
+
+    .price li {
+      border-bottom: 1px solid #eee;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .price .grey {
+      background-color: #eee;
+      font-size: 20px;
+    }
+
+    .button {
+      background-color: #EC0101;
+      border: none;
+      color: #F1F3DE;
+      padding: 10px 25px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 23px;
+    }
+
+    .welcome-h2 {
+      display: block;
+      margin: 2% auto;
+      text-align: center;
+      font-size: 3rem;
+      font-family: 'Montserrat', sans-serif;
+      color: #50CB93;
+    }
+
+    .welcome-p {
+      display: block;
+      margin: 2.5% auto 2%;
+      padding: 1%;
+      max-width: 80vw;
+      text-align: center;
+      font-size: 1.2rem;
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.5;
+    }
+
+    .welcome-why-us {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .welcome-why-us-h4 {
+      display: flex;
+      margin: 1.2% auto 1.2%;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      max-width: 100vw;
+      font-size: 2rem;
+      font-weight: 500;
+      font-family: inherit;
+      color: #F54748;
+    }
+
+    .welcome-why-us-p {
+      display: flex;
+      margin: 1% auto 1%;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      max-width: 80vw;
+      font-size: 1.2rem;
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.5;
+    }
+
+    /* .navbar-nav{
+  margin-left: auto;
+} */
+    .navbar-brand {
+      font-size: 1.5rem;
+    }
+
+    .nav-link {
+      font-size: 1.2rem;
+    }
+
+    .wrapper {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-gap: 5px;
+    }
+
+    img {
+      width: 500px;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+
+    .img-heading {
+      font-size: 1.5rem;
+      text-align: center;
+      font-family: inherit;
+      padding: 15px;
+      margin: 10px auto;
+    }
+
+    .images {
+      padding: 10px;
+    }
+
+    .gallery-page-opening {
+      display: block;
+      margin: 10px auto;
+      padding: 5px;
+      text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    div a span {
+      border: 1px dotted white;
+      border-radius: 5%;
+      display: inline-block;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 2.2rem;
+      padding: 0.5%;
+    }
+    #testimonials{
+      /* display: block; */
+      padding:5% 7%;
+      /* border: 1px solid white;
+      max-width: 50%;
+      margin: 50px auto; */
+      text-align: center;
+
+    }
+.testimonial-images{
+  width: 7%;
+  height: 5%;
+  border-radius: 100%;
+  object-fit: cover;
+  margin: 20px;
+}
+    @media only screen and (max-width: 600px) {
+      .columns {
+        width: 100%;
+      }
+
+    }
+  </style>
+</head>
+<!-- <header> -->
+<!-- <h2 style="text-align:justify;"class="mem-logo">Gym</h2>
+  <a class="mem-home" href="index.html">Home</a> -->
+<!-- </header> -->
+
+<body class="membership-body">
+
+
+  <nav class="navbar navbar-expand-md navbar-light navbar-custom" style="background-color: #EDEDED;margin-top:0;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">WOLF</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Membership</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="welcome">
+      <h2 class="welcome-h2">Welcome</h2>
+      <p class="welcome-p">
+        Welcome to the website Intense Gym! We hope that you will appreciate our services and opportunities we offer our loyal and potential customers. Here are some of them:
+      </p>
+    </div>
+    <div class="welcome-why-us">
+      <div class="welcome-flex">
+        <h4 class="welcome-why-us-h4">Qualified Coaches</h4>
+        <p class="welcome-why-us-p">
+          Our coaches have years of experience in various types of fitness and sports.
+        </p>
+      </div>
+      <div class="welcome-flex">
+        <h4 class="welcome-why-us-h4">Individual Approach</h4>
+        <p class="welcome-why-us-p">
+          Every client of Intense has a personalized program of training and nutrition.
+        </p>
+      </div>
+      <div class="welcome-flex">
+        <h4 class="welcome-why-us-h4">Modern Fitness Equipment</h4>
+        <p class="welcome-why-us-p">
+          We cooperate with leading fitness equipment suppliers to give you the superior results.
+        </p>
+      </div>
+    </div>
+  </main>
+<!--
+  <div class="gallery-page-opening">
+    <a class="gallery-link" href="gallery.html">
+      <span style="color:#96BAFF;">Click here to see images</span>
+    </a>
+  </div> -->
+
+
+
+<section id="testimonials">
+  <h2 class="welcome-h2">Testimonials</h2>
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" data-bs-pause="hover">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <p style="text-transform:uppercase;" class="testimonials-p welcome-why-us-p">“The workouts feature innovative technology & knowledgeable trainers. For over 10 years, it has worked incredible”</p>
+      <img class="testimonial-images"src="https://webstockreview.net/images/hello-clipart-working-man-7.png" class="d-block w-100" alt="...">
+      <em>Nandish,Whitefield</em>
+    </div>
+    <div class="carousel-item">
+      <p class="testimonials-p welcome-why-us-p">“HIGH QUALITY, DIVERSE GROUP CLASSES; EQUIPMENTS IN GOOD CONDITION; PEOPLE ARE NICE TO ONE ANOTHER LIKE IN A FRIENDLY COMMUNITY ”</p>
+      <img class="testimonial-images"src="https://webstockreview.net/images/hello-clipart-working-man-7.png" class="d-block w-100" alt="...">
+      <em>Nithin,Whitefield</em>
+    </div>
+    <div class="carousel-item">
+      <p class="testimonials-p welcome-why-us-p">“YOU HAVE EVERYTHING ONE COULD WANT IN A GYM AS WELL AS A GREAT LOCATION, GREAT STAFF, GREAT OWNER!”</p>
+      <img class="testimonial-images"src="https://webstockreview.net/images/hello-clipart-working-man-7.png" class="d-block w-100" alt="...">
+      <em>Manoj,Whitefield</em>
+    </div>
+  </div>
+</div>
+</section>
+  <h2 class="pricing-heading headingprice" style="text-align:center;">Choose your Plan</h2>
+  <div class="columns">
+    <ul class="price">
+      <li style="font-size:2.5rem; font-weight:500" class="header">Basic</li>
+      <li style="color:black; font-weight:400;font-size:1.8rem;" class="grey"> 5000Rs/ year</li>
+      <li style="font-size:20px" class="mem-list">The basic plan includes most popular services regularly offered at our gym.</li>
+      <li class="mem-list">Open Gym</li>
+      <li class="mem-list">Crossfit</li>
+      <li class="mem-list">Yoga</li>
+      <li class="grey"><a href="https://rzp.io/i/H8nw0qs" class="button">Sign Up</a></li>
+    </ul>
+  </div>
+
+  <div class="columns">
+    <ul class="price">
+      <li style="font-size:2.5rem; font-weight:500;background-color:#4AA96C;" class="header">Pro</li>
+      <li style="color:black;font-weight:400;font-size:1.8rem;" class="grey">8000Rs/ year</li>
+      <li style="font-size:20px;" class="mem-list">If you have some experience in training, then Pro plan is what you need.</li>
+      <li class="mem-list">Open Gym</li>
+      <li class="mem-list">Crossfit</li>
+      <li class="mem-list">Yoga</li>
+      <li class="mem-list">Personal Training</li>
+      <li class="grey"><a href="https://rzp.io/i/kMieLaTGGq" class="button">Sign Up</a></li>
+    </ul>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<meta name="viewport" content="">
+
+<head>
+  <meta charset="utf-8">
+  <title>WOLF|FAQ</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="css/styles.css"> -->
+  <style>
+    .navbar-brand {
+      font-size: 1.5rem;
+    }
+
+    .nav-link {
+      font-size: 1.2rem;
+    }
+
+    header {
+      margin: 2% auto;
+    }
+
+    .faq-body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .faq-body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #000000;
+      color: #fff;
+    }
+
+    .faq-h1 {
+      text-align: center;
+      margin: 2rem 0;
+      font-size: 2.5rem;
+    }
+
+    .accordion {
+      width: 90%;
+      max-width: 1000px;
+      margin: 2rem auto;
+    }
+
+    .accordion-item {
+      background-color: #fff;
+      color: #111;
+      margin: 1rem 0;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    .accordion-item-header {
+      padding: 0.5rem 3rem 0.5rem 1rem;
+      min-height: 3.5rem;
+      line-height: 1.25rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .accordion-item-header::after {
+      content: "\002B";
+      font-size: 2rem;
+      position: absolute;
+      right: 1rem;
+    }
+
+    .accordion-item-header.active::after {
+      content: "\2212";
+    }
+
+    .accordion-item-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+
+    .accordion-item-body-content {
+      padding: 1rem;
+      line-height: 1.5rem;
+      border-top: 1px solid;
+      border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+    }
+
+    @media(max-width:767px) {
+      html {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<!-- <header>
+  <!<h2 class="logo">Gym</h2> -->
+<!-- <a class="mem-home" href="index.html">Home</a> -->
+<!-- </header> -->
+
+
+<body class="faq-body">
+
+  <header>
+
+
+    <nav class="navbar navbar-expand-md navbar-light" style="background-color: #EDEDED;margin-top:0;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">WOLF</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="membership.html">Membership</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <h1 style="color:#50CB93;" class="faq-h1">FAQ</h1>
+
+  <div style="margin:2% auto;" class="accordion">
+    <div class="accordion-item">
+      <div class="accordion-item-header">
+        HOW CAN I JOIN YOUR GROUP WORKOUTS?
+      </div>
+      <div class="accordion-item-body">
+        <div class="accordion-item-body-content">
+          To become a part of any group at WOLF on a regular basis, you are to have at least the Starter membership card. However, if you would like to give a crack at group training, you can visit a free workout. It takes place every Saturday at
+          our gym and includes elements of several disciplines.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-item-header">
+        WHAT TRAINING IS BETTER FOR ME?
+      </div>
+      <div class="accordion-item-body">
+        <div class="accordion-item-body-content">
+          It is a difficult question to answer. If you have no previous experience in training or are trying it for the first time. To achieve the best possible result during your further training, we recommend our new members to take part in the
+          free physical test. Afterward, we will pick the most suitable training course for you.
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-item-header">
+          ARE THERE ANY BONUS INCLUDED WITH THE MEMBERSHIP?
+        </div>
+        <div class="accordion-item-body">
+          <div class="accordion-item-body-content">
+            We have the loyalty program for our customers. It allows our members to receive additional bonuses according to their training program and membership. The most popular and frequent bonuses are discounts on various workouts and annual
+            membership. Contact our managers to find out more.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-item-header">
+          CAN I CHANGE/CANCEL PLANS ANYTIME?
+        </div>
+        <div class="accordion-item-body">
+          <div class="accordion-item-body-content">
+            After your training course begins, there are two ways of changing or canceling your membership. If you are a new member owning a Starter plan, you can switch to another plan only in half a year. Basic and Pro members can switch to the plan of their choice instantly. Canceling is accessible for all our members regardless of their training package.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-item-header">
+          WHAT HAPPENS AT THE END OF MY TRIAL?
+        </div>
+        <div class="accordion-item-body">
+          <div class="accordion-item-body-content">
+            After your trial ends, you can pay for your favorite workout course you selected before using cash or credit card. However, if you choose a different course or workout package, you won’t be able to try it for free before buying. If you have already been our loyal member for a year or more, you also get permanent discounts on our membership plans.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-item-header">
+          CAN I FREEZE MY MEMBERSHIP?
+        </div>
+        <div class="accordion-item-body">
+          <div class="accordion-item-body-content">
+            Our clients can freeze their membership for not more than 1 year. This feature allows you as a member of our gym to preserve all services you have in your membership plan. We will notify you via e-mail or SMS when the period of your
+            membership freezing comes.
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            CAN I PAY BY CASH OR CARD?
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              We accept Visa, MasterCard, and American Express cards, but you can also pay in cash for any of our services. Our group packages and membership plans are usually paid by card. However, you can also pay using your Google Pay or Phone Pay via our website. If you have any questions, feel free to contact our support.
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="js\json.js"></script>
+</body>
+
+</html>
