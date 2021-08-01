@@ -202,7 +202,7 @@
                                     color: #03a9f4;
                                   }
 
-                                  @media all and (min-width: 250px) and (max-width:800px) {
+                                  @media all and (min-width: 200px) and (max-width:800px) {
 
                                     .showcase,
                                     .showcase header {
