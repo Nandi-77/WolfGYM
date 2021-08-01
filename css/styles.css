@@ -202,7 +202,7 @@
                                     color: #03a9f4;
                                   }
 
-                                  @media all and (min-width: 250px) and (max-width:990px) {
+                                  @media all and (min-width: 250px) and (max-width:800px) {
 
                                     .showcase,
                                     .showcase header {
@@ -215,28 +215,28 @@
                                     }
 
                                     .text h3 {
-                                      font-size: 3rem;
+                                      font-size: 3.5rem;
                                       margin-bottom: 30px;
                                     }
 
                                     .text h4 {
-                                      font-size: 2.5rem;
+                                      font-size: 3rem;
                                       text-align: left;
                                     }
 
                                     .text p {
                                       line-height: 1.3;
-                                      font-size: 2.2rem;
+                                      font-size: 2.5rem;
                                       font-weight: 500;
                                     }
 
                                     .toggle {
                                       position: relative;
-                                      width: 80px;
-                                      height: 80px;
+                                      width: 85px;
+                                      height: 85px;
                                       background: url(https://i.ibb.co/HrfVRcx/menu.png);
                                       background-repeat: no-repeat;
-                                      background-size: 70% auto;
+                                      background-size: 80% auto;
                                       background-position: center;
                                       cursor: pointer;
                                     }
@@ -244,12 +244,12 @@
                                     .toggle.active {
                                       background: url(https://i.ibb.co/rt3HybH/close.png);
                                       background-repeat: no-repeat;
-                                      background-size: 55px;
+                                      background-size: 65px;
                                       background-position: center;
                                       cursor: pointer;
                                     }
 
                                     .logo {
-                                      font-size: 2.5rem;
+                                      font-size: 3.5rem;
                                     }
                                   }
