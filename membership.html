@@ -208,15 +208,40 @@
   object-fit: cover;
   margin: 20px;
 }
+.googlemap-h2{
+        display: block;
+        margin: 2% auto;
+        text-align: center;
+        font-size: 3rem;
+        font-family: 'Montserrat', sans-serif;
+        color: #50CB93;
+        margin-right: 25px;
+      }
+.googlemap{
+  display: block;
+  margin: 2% auto;
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
+}
     @media only screen and (max-width: 600px) {
       .columns {
         width: 100%;
       }
+      .googlemap{
+        display: block;
+        margin: 2% auto;
+        width: 100%;
+      }
 
     }
+      @media only screen and (min-width: 1100px) {
+        .welcome-h2{
+          margin:2% auto;
+        }
+      }
   </style>
 </head>
-
 
 <body class="membership-body">
 
@@ -273,12 +298,7 @@
       </div>
     </div>
   </main>
-<!--
-  <div class="gallery-page-opening">
-    <a class="gallery-link" href="gallery.html">
-      <span style="color:#96BAFF;">Click here to see images</span>
-    </a>
-  </div> -->
+
 
 
 
@@ -303,6 +323,8 @@
     </div>
   </div>
 </div>
+
+
 </section>
   <h2 class="pricing-heading headingprice" style="text-align:center;">Choose your Plan</h2>
   <div class="columns">
@@ -329,6 +351,11 @@
       <li class="grey"><a href="https://rzp.io/i/kMieLaTGGq" class="button">Sign Up</a></li>
     </ul>
   </div>
+<br>
+<h2 class="googlemap-h2">Visit Us</h2>
+  <div class="googlemap">
+    <iframe class=""src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.553832490637!2d77.74250891482161!3d12.936372690879024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13091e3b0279%3A0x9b0780b856358b03!2sWolf%20Fitness!5e0!3m2!1sen!2sin!4v1627838180133!5m2!1sen!2sin" width="50%;" height="200px;"style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </>
 </body>
 
 </html>
